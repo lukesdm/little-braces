@@ -10,7 +10,7 @@ Visual Studio 2010. 2012 should also work, but is untested.
 [Download](http://github.com/lukesdm/little-braces/raw/master/Output/LittleBraces.vsix), then double-click/activate the VSIX file in Explorer.
 
 ### Usage
-Once installed, the effect is enabled immediately.
+Once installed, the effect is enabled immediately. Note: lines containing only ```};``` are also shrunk, e.g. object initializers.
 
 By default, the lines are shrunk to 0.3x the standard size. If this isn't satisfactory, you can edit the 'BraceLineScale.txt' file in the extension's install directory - it contains just the scale factor as a decimal. Changes will be applied the next time Visual Studio is started.
 

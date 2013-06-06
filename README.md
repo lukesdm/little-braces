@@ -1,7 +1,7 @@
 # Little Braces
 A Visual Studio editor extension that shrinks lines of C, C++ and C# code that contain only curly braces.
 
-TODO: SCREENSHOT HERE
+![](http://lukesdm.github.com/little-braces/media/screenshot1.png)
 
 ###Requirements
 Visual Studio 2010. 2012 should also work, but is untested.

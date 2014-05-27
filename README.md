@@ -1,3 +1,7 @@
+## This is now a feature in productivity power tools for VS 2013. Use that instead.
+
+[Get it here](http://blogs.msdn.com/b/visualstudio/archive/2014/05/23/announcing-update-to-productivity-power-tools-2013.aspx)
+
 # Little Braces
 A Visual Studio editor extension that shrinks lines of C, C++ and C# code that contain only curly braces.
 

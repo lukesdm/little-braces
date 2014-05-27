@@ -1,10 +1,14 @@
+## This is now a feature in productivity power tools for VS 2013. Use that instead.
+
+[Get it here](http://blogs.msdn.com/b/visualstudio/archive/2014/05/23/announcing-update-to-productivity-power-tools-2013.aspx)
+
 # Little Braces
 A Visual Studio editor extension that shrinks lines of C, C++ and C# code that contain only curly braces.
 
 ![](http://lukesdm.github.com/little-braces/media/screenshot1.png)
 
 ###Requirements
-Visual Studio 2010. 2012 should also work, but is untested.
+Visual Studio 2013. 2012 and 2010 should also work, but is untested.
 
 ### Download/Installation
 [Download](http://github.com/lukesdm/little-braces/raw/master/Output/LittleBraces.vsix), then double-click/activate the VSIX file in Explorer.

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using Microsoft.VisualStudio.Text.Formatting;
 using System.ComponentModel.Composition;
 using Microsoft.VisualStudio.Utilities;
@@ -31,6 +32,7 @@ namespace BraceLineShrinker
         public static double BraceLineScale { get; set; }
 
         const string settingsFilename = @"BraceLineScale.txt";
+        Regex braceMatchExpression = new Regex(@"^(((\{\s*)+)|((\}\s*)+)|((\{\s*)+(\}\s*)+));?$");
 
         static BraceLineTransformSource()
         {
@@ -55,8 +57,7 @@ namespace BraceLineShrinker
 
         public LineTransform  GetLineTransform(ITextViewLine line, double yPosition, Microsoft.VisualStudio.Text.Editor.ViewRelativePosition placement)
         {
- 	        string lineText = line.Extent.GetText().Trim();
-            if (lineText == "{" || lineText == "}" || lineText == "};")
+            if (braceMatchExpression.IsMatch(line.Extent.GetText().Trim()))
             {
                 return new LineTransform(BraceLineScale);
             }
